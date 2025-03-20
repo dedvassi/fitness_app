@@ -1,0 +1,57 @@
+# Игнорировать виртуальное окружение
+venv/
+.env/
+.env*/
+
+# Игнорировать кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Игнорировать файлы и папки, созданные IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Игнорировать локальные настройки и файлы
+*.local
+*.env.local
+*.env.*.local
+
+# Игнорировать логи и временные файлы
+*.log
+*.tmp
+*.temp
+
+# Игнорировать базы данных SQLite
+*.sqlite
+*.db
+*.sqlite3
+
+# Игнорировать статические файлы и медиа (если используются)
+static/
+media/
+
+# Игнорировать зависимости (если используется pipenv или poetry)
+Pipfile
+Pipfile.lock
+poetry.lock
+pyproject.toml
+
+# Игнорировать скомпилированные файлы
+*.mo
+*.pot
+
+# Игнорировать Jupyter Notebook
+.ipynb_checkpoints/
+
+# Игнорировать тестовые данные
+test_data/
+tests/__pycache__/
+
+# Игнорировать macOS системные файлы
+.DS_Store
+
+# Игнорировать Windows системные файлы
+Thumbs.db
