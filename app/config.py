@@ -1,7 +1,9 @@
 import os
-from pydantic import BaseSettings
+from dotenv import load_dotenv
 
-class Settings(BaseSettings):
-    database_url: str = os.getenv("DATABASE_URL", "sqlite:///./fitness_app.db")
+load_dotenv()
 
-settings = Settings()
+SECRET_KEY = os.getenv("SECRET_KEY", "supersecretkey")
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+REFRESH_TOKEN_EXPIRE_DAYS = 7
